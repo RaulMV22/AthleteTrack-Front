@@ -1,4 +1,4 @@
-# Angular specific
+# Angular / Next.js specific
 /dist/
 /out-tsc/
 /tmp/
@@ -12,8 +12,13 @@
 /package-lock.json
 /yarn.lock
 
-# Environment files
-/.env
+# Environment files - ALL variations
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env.local
 
 # Angular CLI and build artefacts
 /.angular-cli.json
@@ -26,6 +31,9 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+lerna-debug.log*
+
+# Next.js specific (Front subdirectory)
 Front/.env.local
 Front/package-lock.json
 /Front/.next
@@ -33,3 +41,37 @@ Front/package-lock.json
 /Front/test-results
 /Front/package-lock.json
 /Front/node_modules/
+/Front/out/
+
+# IDE specific files
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Testing
+/playwright/.cache/
+test-results/
+playwright-report/
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*~
