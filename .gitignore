@@ -26,3 +26,10 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+Front/.env.local
+Front/package-lock.json
+/Front/.next
+/Front/playwright-report
+/Front/test-results
+/Front/package-lock.json
+/Front/node_modules/
